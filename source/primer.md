@@ -74,8 +74,8 @@ If you would like to learn HTML, we recommend
 ### The HTTP Request/Response cycle {#cycle}
 
 A very important part of HTTP for the web developer is the request/response cycle. To use HTTP
-you have to make a request. A HTTP server, like a web server, is then obliged to respond. When you
-build your web application, you design it to react to a HTTP request by returning a HTTP response.
+you have to make a request. An HTTP server, like a web server, is then obliged to respond. When you
+build your web application, you design it to react to an HTTP request by returning an HTTP response.
 Frameworks often abstract much of these nuts and bolts, but it is important to understand
 what is happening behind the scenes.
 
@@ -121,6 +121,7 @@ Java ResourceBundles use one or more Properties files to provide internationaliz
 to users based their [Locale](http://docs.oracle.com/javase/6/docs/api/java/util/Locale.html).
 Support for localizing an application was built into the framework from the ground-up.
 
+
 Again the Java Tutorials provide
 [more information](http://docs.oracle.com/javase/tutorial/i18n/resbundle/concept.html).
 
@@ -133,7 +134,7 @@ is a plain old Java object which is instanced for each request.
 
 ### JavaScript, AJAX, and SOAP {#javascript}
 
-WIth HTTP and HTML you can already provide static web pages. Today this is much
+With HTTP and HTML you can already provide static web pages. Today this is much
 often not longer enough and your application users might expect a interactive user interface.
 Web developers often resort to [JavaScript](http://en.wikipedia.org/wiki/JavaScript)
 to make web applications more interesting.
@@ -195,7 +196,8 @@ several requests to be somewhat difficult.
 
 To alleviate this difficulty, the servlet API provides a programmatic
 concept called a *session*, represented as an object that
-implements the `javax.servlet.http.HttpSession`
+implements the `javax.servlet.http.
+Session`
 interface. The servlet container will use one of two techniques
 (cookies or URL rewriting) to ensure that the next request from the
 same user will include the *session id*
